@@ -5,17 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    [SerializeField]
+    string levelsToLoad = "Level1";
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Canvas>().enabled = false;
+        GetComponent<Canvas>().enabled = true;
     }
 
     // Update is called once per frame
     void Update()
     {
         //If the escape key is pressed
-        if(Input.GetKeyDown(KeyCode.Escape) && Time.timeScale == 1)
+        if (Input.GetKeyDown(KeyCode.Escape) && Time.timeScale == 1)
         {
             //display the pause menu
             GetComponent<Canvas>().enabled = true;
@@ -24,10 +26,10 @@ public class PauseMenu : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && Time.timeScale == 0)
         {
-            Resume();
+            Resumegame();
         }
     }
-    public void Resume() 
+    public void Resumegame()
     {
         //hide the pause canvas again
         GetComponent<Canvas>().enabled = false;
@@ -43,6 +45,10 @@ public class PauseMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+    public void Play()
+    {
+        SceneManager.LoadScene(levelsToLoad);
     }
 
 }
