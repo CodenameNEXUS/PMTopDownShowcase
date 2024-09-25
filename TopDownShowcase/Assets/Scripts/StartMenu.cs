@@ -7,10 +7,14 @@ public class PauseMenu : MonoBehaviour
 {
     [SerializeField]
     string levelsToLoad = "Level1";
+    [SerializeField]
+    bool menu = false;
+    [SerializeField]
+    string MainMenu = "Start";
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Canvas>().enabled = true;
+        GetComponent<Canvas>().enabled = menu;
     }
 
     // Update is called once per frame
@@ -50,5 +54,8 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene(levelsToLoad);
     }
-
+    public void StartMenu()
+    {
+        SceneManager.LoadScene(MainMenu);
+    }
 }

@@ -775,6 +775,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelsToLoad: Level1
+  menu: 1
+  MainMenu: Start
 --- !u!1 &1708736525
 GameObject:
   m_ObjectHideFlags: 0
