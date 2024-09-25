@@ -24,7 +24,7 @@ public class PlayerShootAlt : MonoBehaviour
     {
         timer += Time.deltaTime; //0.016667 = 60 fps
         //IF you click
-        if (Input.GetButton("Fire1") && timer > shootDelay)
+        if (Input.GetButton("Fire2") && timer > shootDelay)
         {
             timer = 0; //reset timer
             //shoot towrds mouse cursor

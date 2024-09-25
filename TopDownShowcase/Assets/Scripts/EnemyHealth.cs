@@ -29,7 +29,7 @@ public class EnemyHealth : MonoBehaviour
         {
             health -= 1;
             healthBar.fillAmount = health / maxHP;
-            if (health < 0)
+            if (health <= 0)
             {
                 Destroy(gameObject);
             }

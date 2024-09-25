@@ -19,6 +19,8 @@ public class PlayerHealth : MonoBehaviour
     float gruntDamage = 20f;
     [SerializeField]
     float enemyBulletDMG = 5f;
+    [SerializeField]
+    float bossBulletDMG = 30f;
     // Start is called before the first frame update
     void Start()
     {
@@ -75,6 +77,15 @@ public class PlayerHealth : MonoBehaviour
 
             }
         }
+        if (collision.gameObject.tag == "BossBullet")
+        {
+            health -= bossBulletDMG;
+            healthBar.fillAmount = health / maxHP;
+            if (health <= 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
+            }
+        }
     }
 }
