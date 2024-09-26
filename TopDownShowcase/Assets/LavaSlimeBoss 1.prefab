@@ -329,11 +329,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3196fec5bae9b1478ff76fc89f1f2d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 549271568321119118, guid: 361c7ab864716dc4ba51b93afadec463, type: 3}
   bulletSpeed: 6
-  bulletLifetime: 20
+  bulletLifetime: 60
   shootDelay: 2
-  shootDistance: 100
+  shootDistance: 1749
 --- !u!1 &8672748518256709505
 GameObject:
   m_ObjectHideFlags: 0
