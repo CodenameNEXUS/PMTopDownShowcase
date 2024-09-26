@@ -21,6 +21,8 @@ public class PlayerHealth : MonoBehaviour
     float enemyBulletDMG = 5f;
     [SerializeField]
     float bossBulletDMG = 30f;
+    [SerializeField]
+    string levelToLoadW = "Level2";
     // Start is called before the first frame update
     void Start()
     {
@@ -86,6 +88,10 @@ public class PlayerHealth : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
             }
+        }
+        if (collision.gameObject.tag == "Door")
+        {
+            SceneManager.LoadScene(levelToLoadW);
         }
     }
 }

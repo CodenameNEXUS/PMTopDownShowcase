@@ -9,6 +9,7 @@ TagManager:
   - EnemyBullet
   - boss
   - BossBullet
+  - Door
   layers:
   - Default
   - TransparentFX

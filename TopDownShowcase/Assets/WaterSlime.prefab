@@ -422,9 +422,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseSpeed: 3.33
-  chaseTriggerDistance: 10
+  chaseTriggerDistance: 4.15
   goHome: 1
-  homeSpeed: 5
+  homeSpeed: 3.33
   homeDistance: 13
 --- !u!50 &7481523407307233415
 Rigidbody2D:
@@ -465,4 +465,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a16ffd4f6db9e1a40a38d64f90e18071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 3
