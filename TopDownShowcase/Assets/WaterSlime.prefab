@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseSpeed: 3.33
-  chaseTriggerDistance: 4.15
+  chaseTriggerDistance: 6.37
   goHome: 1
   homeSpeed: 3.33
   homeDistance: 13
